@@ -7,7 +7,9 @@ permissions:
   contents: write
 jobs:
   deploy:
-    runs-on: docker.io/squidfunk/mkdocs-material:latest
+    runs-on: ubuntu-latest
+    container:
+      image: squidfunk/mkdocs-material:latest
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
