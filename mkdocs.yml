@@ -37,5 +37,5 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
   - search
-  - minify:
-      minify_html: true
+#  - minify:
+#      minify_html: true
